@@ -8920,3 +8920,45 @@ ul.list-connected-app > li:last-child .connected-app {
 .w100 {
   width: 100px;
 }
+.model-custom-css{
+  position: fixed;
+  /* top: 46px; */
+  /* left: 33rem; */
+  /* background: beige; */
+  /* filter: grayscale(128%); */
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  height: 100%;
+  /* overflow: hidden; */
+  display: block;
+  outline: 0;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+
+}
+.form-artist-edit-css{
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-edit-input-css{
+  margin: 5px;
+  padding: 5px;
+  display: grid
+;
+  justify-items: center;
+}
+
+.custom-form-group{
+  display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+}
