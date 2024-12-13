@@ -59,6 +59,8 @@ import ArtistManagement from "../Pages/ArtistManagement";
 import TableBasic from "../Pages/Dashboard/DashBoardPages/TableBasic";
 import ArtistDetail from "../Pages/Dashboard/DashBoardPages//ArtistDetail";
 
+import BlogRequest from "../Pages/Dashboard/DashBoardPages/BlogRequest"
+
 import ResellPage from "../Pages/ResellPage/ResellPage";
 
 const AppRoutes = () => {
@@ -119,6 +121,7 @@ const AppRoutes = () => {
           <Route path="/artist" element={<ArtistManagement />} />
           <Route path="/tableManagement" element={<TableBasic />} />
           <Route path="/artists/:id" element={<ArtistDetail />} />
+          <Route path="/BlogRequest" element={<BlogRequest />} />
         </Routes>
       </LayoutWrapper>
     </Router>
@@ -152,6 +155,7 @@ const LayoutWrapper = ({ children }) => {
     "/Appcontact",
     "/Appchat",
     "/Blogdashboard",
+    "/BlogRequest"
   ];
   const shouldHideHeaderFooter = hideHeaderFooterRoutes.includes(
     location.pathname

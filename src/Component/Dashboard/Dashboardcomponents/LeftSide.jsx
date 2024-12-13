@@ -230,6 +230,9 @@ const UserAccount = () => {
                       <Link to="/Blogdetails">blog Details</Link>
                     </li>
                     <li>
+                      <Link to="/BlogRequest">blog Requests</Link>
+                    </li>
+                    <li>
                       <Link to="/Blogdashboard">blog Dashboard</Link>
                     </li>
                   </ul>
