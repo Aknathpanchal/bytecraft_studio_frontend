@@ -56,7 +56,8 @@ import Teamboards from "../Pages/Dashboard/DashBoardPages/Teamboards";
 import ImageCropping from "../Pages/Dashboard/DashBoardPages/ImageCropping";
 import Trial from "../Pages/Trial";
 import ArtistManagement from "../Pages/ArtistManagement";
-import TableBasic from "../Pages/Dashboard/DashBoardPages/TableBasic";
+import ArtistManageTable from "../Pages/Dashboard/DashBoardPages/ArtistManageTable";
+import BuyerManageTable from "../Pages/Dashboard/DashBoardPages/BuyerManageTable"
 import ArtistDetail from "../Pages/Dashboard/DashBoardPages//ArtistDetail";
 
 import BlogRequest from "../Pages/Dashboard/DashBoardPages/BlogRequest"
@@ -119,9 +120,10 @@ const AppRoutes = () => {
           <Route path="/dashboardaccess" element={<Dashboard />} />
           <Route path="/trial" element={<Trial />} />
           <Route path="/artist" element={<ArtistManagement />} />
-          <Route path="/tableManagement" element={<TableBasic />} />
+          <Route path="/ArtistManageTable" element={<ArtistManageTable />} />
           <Route path="/artists/:id" element={<ArtistDetail />} />
           <Route path="/BlogRequest" element={<BlogRequest />} />
+          <Route path="/BuyerManageTable" element={<BuyerManageTable/>}/>
         </Routes>
       </LayoutWrapper>
     </Router>
@@ -134,9 +136,10 @@ const LayoutWrapper = ({ children }) => {
     "/completeprofile",
     "/image-edit",
     "/artists/:id",
-    "/tableManagement",
-    "/teamboard",
-    "/maintenance",
+    "/ArtistManageTable",//superadmin ,admin  
+    "/BuyerManageTable",//superadmin ,admin  
+    "/teamboard",//superadmin ,admin  
+    "/maintenance",//superadmin ,admin  
     "/search",
     "/invoice",
     "/imagegallery",
@@ -147,7 +150,7 @@ const LayoutWrapper = ({ children }) => {
     "/Filedocs",
     "/create-blog",
     "/dashboardaccess",
-    "/Bloglist",
+    "/Bloglist",//superadmin ,admin  
     "/Filedashboard",
     "/Blogdetails",
     "/Blogpost",
@@ -155,7 +158,7 @@ const LayoutWrapper = ({ children }) => {
     "/Appcontact",
     "/Appchat",
     "/Blogdashboard",
-    "/BlogRequest"
+   "/BlogRequest"    //superadmin ,admin  
   ];
   const shouldHideHeaderFooter = hideHeaderFooterRoutes.includes(
     location.pathname

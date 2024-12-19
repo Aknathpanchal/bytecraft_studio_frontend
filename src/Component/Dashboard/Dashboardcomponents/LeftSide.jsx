@@ -205,42 +205,45 @@ const UserAccount = () => {
                 </li>
 
                 <li>
-                <div className="dropdown">
-                  <a
-                    href="#Blog"
-                    onClick={() => toggleDropdown("blog")}
-                    className="has-arrow"
-                  >
-                    <i className="fa fa-th-large"></i>
-                    <span>Blog</span>
-                    <i className={`${activeDropdown === "blog" ? "up" : "down"} ml-2`}></i>
-                  </a>
-                  <ul
-                    className={`dropdown-menu ${
-                      activeDropdown === "blog" ? "show" : ""
-                    }`}
-                  >
-                    <li>
-                      <Link to="/Bloglist">Blog List</Link>
-                    </li>
-                    <li>
-                      <Link to="/create-blog">Create Blog</Link>
-                    </li>
-                    <li>
-                      <Link to="/Blogdetails">blog Details</Link>
-                    </li>
-                    <li>
-                      <Link to="/BlogRequest">blog Requests</Link>
-                    </li>
-                    <li>
-                      <Link to="/Blogdashboard">blog Dashboard</Link>
-                    </li>
-                  </ul>
-                </div>
+                <div
+  className={`dropdown ${activeDropdown === "blog" ? "active-dropdown" : ""}`}
+>
+  <a
+    href="#Blog"
+    onClick={() => toggleDropdown("blog")}
+    className="has-arrow"
+  >
+    <i className="fa fa-th-large"></i>
+    <span>Blog</span>
+    <i className={`${activeDropdown === "blog" ? "up" : "down"} ml-2`}></i>
+  </a>
+  <ul
+    className={`dropdown-menu ${
+      activeDropdown === "blog" ? "show" : ""
+    }`}
+  >
+    <li>
+      <Link to="/Bloglist">Blog List</Link>
+    </li>
+    <li>
+      <Link to="/create-blog">Create Blog</Link>
+    </li>
+    <li>
+      <Link to="/Blogdetails">Blog Details</Link>
+    </li>
+    <li>
+      <Link to="/BlogRequest">Blog Requests</Link>
+    </li>
+    <li>
+      <Link to="/Blogdashboard">Blog Dashboard</Link>
+    </li>
+  </ul>
+</div>
+
               </li>
 
               <li>
-                <div className="dropdown">
+                <div className={`dropdown ${activeDropdown === "widget" ? "active-dropdown" : ""}`}>
                   <a
                     href="#Widget"
                     onClick={() => toggleDropdown("widget")}
@@ -269,7 +272,7 @@ const UserAccount = () => {
               </li>
 
               <li>
-                <div className="dropdown">
+                <div className={`dropdown ${activeDropdown === "artist-management" ? "active-dropdown" : ""}`}>
                   <a
                     href="#artist-management"
                     onClick={() => toggleDropdown("artist-management")}
@@ -294,8 +297,39 @@ const UserAccount = () => {
                   </ul>
                 </div>
               </li>
+
               <li>
-                <div className="dropdown">
+                <div className={`dropdown ${activeDropdown === "Buyer-management" ? "active-dropdown" : ""}`}>
+                  <a
+                    href="#Buyer-management"
+                    onClick={() => toggleDropdown("Buyer-management")}
+                    className="has-arrow"
+                  >
+                    <i className="fa fa-comments"></i>
+                    <span>Buyer-management</span>
+                    <i className={`${activeDropdown === "Buyer-management" ? "up" : "down"} ml-2`}></i>
+                  </a>
+                  <ul
+                    className={`dropdown-menu ${
+                      activeDropdown === "Buyer-management" ? "show" : ""
+                    }`}
+                  >
+                    <li>
+                      <Link to="/BuyerManageTable">All Buyers</Link>
+                    </li>
+                    <li>
+                      <Link to="/Appcontact">buyer orders</Link>
+                    </li>
+                    <li>
+                      <Link to="/Appchat">buyer transactions </Link>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+
+              <li>
+                <div className={`dropdown ${activeDropdown === "Documentation" ? "active-dropdown" : ""}`}>
                   <a
                     href="#Documentation"
                     onClick={() => toggleDropdown("Documentation")}

@@ -23,7 +23,7 @@ const loadScript = (src) => {
   });
 };
 
-function TableBasic() {
+function ArtistManageTable() {
   const [loading, setLoading] = useState(true);
   const [artists, setArtists] = useState([]);
   const [error, setError] = useState(null);
@@ -430,4 +430,4 @@ function TableBasic() {
   );
 }
 
-export default TableBasic;
+export default ArtistManageTable;
